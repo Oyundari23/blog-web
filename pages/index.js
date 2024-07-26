@@ -22,7 +22,7 @@ export default function Home() {
     <div className="container mx-auto">
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
         {articles.map((item) => (
-          <div key={item.id} className="shadow-lg card bg-base-100">
+          <div key={item.id} className="shadow-lg card bg-base-100 ">
             <div className="card-body">
               <Image src={item.social_image} width={500} height={500}></Image>
               <Link href={item.url} target="_blank">
@@ -31,6 +31,18 @@ export default function Home() {
             </div>
           </div>
         ))}
+      </div>
+      <div>
+        jgjgjgj
+      </div>
+      <div>
+        hghjgj
+      </div>
+      <div>
+        hghjgj
+      </div>
+      <div>
+        hghjgj
       </div>
     </div>
   );
