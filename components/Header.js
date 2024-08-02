@@ -1,9 +1,8 @@
 
 
-export function Footer() {
-    let 
+export function Header() {
+    return (
+        <div>jj</div>
+        )
 }
 
-return (
-
-)

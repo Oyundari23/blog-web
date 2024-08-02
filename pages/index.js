@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { Footer } from "@/components/Footer";
+import { Header } from "@/components/Header";
 
 export default function Home() {
   const [articles, setArticles] = useState([]);
@@ -24,6 +26,7 @@ export default function Home() {
 
   return (
     <div className="container mx-auto">
+      <Header/>
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
         {articles.map((item) => (
           <div key={item.id} className="shadow-lg card bg-base-100 ">
@@ -44,6 +47,7 @@ export default function Home() {
         ))}
       </div>
       <div className="flex justify-center mt-4"> <button className="btn btn-primary">Load more</button></div>
+      <Footer/>
     </div>
   );
 }
