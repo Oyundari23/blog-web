@@ -1,4 +1,4 @@
-
+import Image from index
 
 export function Header() {
     return (

@@ -4,20 +4,16 @@ import { useEffect, useState } from "react";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import dayjs from "dayjs";
-import relativeTime from 'dayjs/plugin/relativeTime'
-import "@/components/dayjs-mn"
-
-
+import { Dayjsmn } from "@/components/dayjs-mn";
+import relativeTime from 'dayjs/plugin/relativeTime';
 
 dayjs.extend(relativeTime);
-
 
 export default function Home() {
   const [articles, setArticles] = useState([]);
   const [page, setPage] = useState(1);
   const [ended, setEnded] = useState(false);
   const [loading, setLoading] = useState(false);
-
 
   useEffect(() => {
     loadMore();
@@ -72,7 +68,6 @@ export default function Home() {
             Load more
           </button></div>
       }
-
       <Footer />
     </div>
   );
