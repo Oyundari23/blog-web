@@ -46,7 +46,7 @@ export default function Home() {
             <div className="card-body flex flex-col gap-4">
               <Image src={item.social_image} width={500} height={500} className="aspect-video object-cover bg-slate-600" />
               <div className="badge badge-primary badge-outline">{item.tag_list[0]}</div>
-              <Link href={item.url} target="_blank">
+              <Link href={item.path}>
                 {item.title}
               </Link>
               <div className="flex items-center gap-2">
